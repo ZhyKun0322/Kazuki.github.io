@@ -1,0 +1,158 @@
+<!-- hobby.html - MY HOBBY PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobby - Kazuki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #e74c3c;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #c0392b;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .hobby-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .hobby-card h2 {
+            color: #c0392b;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .hobby-content {
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .hobby-content p {
+            margin-bottom: 1rem;
+        }
+
+        /* Buy Me a Coffee */
+        .bmc {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #FFDD00;
+            color: #000;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .bmc:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .bmc {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-btn">← Back Home</a>
+            <h1>🎨 My Hobby</h1>
+            <div style="width: 80px;"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hobby 1 -->
+        <article class="hobby-card">
+            <h2>🎵 Listening to music</h2>
+            <div class="hobby-content">
+                <p>
+                    [WRITE ABOUT YOUR HOBBY HERE]
+                </p>
+                <p>
+                    Describe what you enjoy doing in your free time besides gaming and coding.
+                </p>
+            </div>
+        </article>
+
+        <!-- Hobby 2 -->
+        <article class="hobby-card">
+            <h2>📸 Photography</h2>
+            <div class="hobby-content">
+                <p>
+                    [ANOTHER HOBBY]
+                </p>
+            </div>
+        </article>
+
+        <!-- Add more hobbies -->
+    </div>
+
+    <a href="https://buymeacoffee.com/zhykun" target="_blank" class="bmc">
+        ☕ Coffee
+    </a>
+</body>
+</html>
