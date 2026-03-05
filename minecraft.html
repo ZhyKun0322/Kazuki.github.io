@@ -1,0 +1,181 @@
+<!-- minecraft.html - PLAYING MINECRAFT PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Minecraft - Kazuki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #5D8C3A;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #3D5C2A;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .mc-card {
+            background: #f5f5f0;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 4px solid #3D5C2A;
+            box-shadow: 0 6px 0 rgba(0,0,0,0.2);
+        }
+
+        .mc-card h2 {
+            color: #3D5C2A;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .mc-date {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .mc-content {
+            line-height: 1.7;
+        }
+
+        .mc-content p {
+            margin-bottom: 0.8rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #5D8C3A;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+        }
+
+        /* Buy Me a Coffee */
+        .bmc {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #FFDD00;
+            color: #000;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 100;
+        }
+
+        .bmc:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .bmc {
+                bottom: 10px;
+                right: 10px;
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-btn">← Back Home</a>
+            <h1>⛏️ Playing Minecraft</h1>
+            <div style="width: 80px;"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- MC Post 1 -->
+        <article class="mc-card">
+            <h2>🏰 My Minecraft World</h2>
+            <div class="mc-date">March 5, 2026 | Minecraft PE</div>
+            <div class="mc-content">
+                <p>
+                    [WRITE ABOUT YOUR CASTLE BUILD HERE]
+                </p>
+                <p>
+                    Describe the process, the challenges of building on mobile, what materials you used, etc.
+                </p>
+            </div>
+            <span class="tag">Building</span>
+            <span class="tag">Survival</span>
+        </article>
+
+        <!-- MC Post 2 -->
+        <article class="mc-card">
+            <h2>💀 Surviving Hardcore Mode</h2>
+            <div class="mc-date">March 5, 2026 | Hardcore</div>
+            <div class="mc-content">
+                <p>
+                    [WRITE ABOUT YOUR HARDCORE EXPERIENCE]
+                </p>
+            </div>
+            <span class="tag">Hardcore</span>
+            <span class="tag">Challenge</span>
+        </article>
+
+        <!-- Add more MC posts -->
+    </div>
+
+    <a href="https://buymeacoffee.com/zhykun" target="_blank" class="bmc">
+        ☕ Coffee
+    </a>
+</body>
+</html>
